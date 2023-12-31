@@ -1,6 +1,50 @@
 
 .card{
-    background-color: rgb(238, 234, 228);
-    height: 200px;
-    width: 300px;
+    background-color: #F0E68C;
+    height: 250px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.card-container{
+    height: 82%;
+    padding: 15px;
+}
+
+.card-footer{
+    font-size: 0.8rem;
+    border-top: 1px solid black;
+    padding: 10px 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(0,0,0,0.6);
+    margin-bottom: 8px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 80%;
+}
+
+.card-delete-btn{
+    font-size: 1rem;
+    display: inline;
+    float: right;
+    cursor: pointer;
+    color: rgba(0,0,0,0.5);
+}
+
+.card-content {
+    font-size: 1rem;
+    color: rgba(0,0,0,0.6);
+    clear: right;
+    height: 80%;
+}
+
+.card-timestamp{
+    color: rgba(0,0,0,0.3);
+    font-weight: bold;
 }

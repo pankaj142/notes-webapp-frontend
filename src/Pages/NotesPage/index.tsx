@@ -8,9 +8,6 @@ const NotesPage = () => {
             <Card/>
             <Card/>
             <Card/>
-            <Card/>
-            <Card/>
-
         </div>
     )
 }

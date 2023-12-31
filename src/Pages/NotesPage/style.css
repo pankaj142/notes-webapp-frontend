@@ -1,7 +1,9 @@
 .notes-page-container{
     height: 88vh;
-    padding: 2% 5%;
+    padding: 2% 15%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 50px;
 }
