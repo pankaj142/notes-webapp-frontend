@@ -1,0 +1,22 @@
+
+.header {
+    background-color: rgb(150, 218, 239);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+    width: 100vw;
+    padding: 0 10%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+}
+
+.header p {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.login-btn{
+    cursor: pointer;
+}
