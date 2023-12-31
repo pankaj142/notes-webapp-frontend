@@ -31,6 +31,10 @@
     cursor: pointer;
 }
 
+.login-form-header .cross-icon:hover{
+    font-size: 1.5rem;
+}
+
 .login-form-header .form-title{
     display: inline-block;
     font-size: 1.2rem;

@@ -8,7 +8,8 @@ const Login = () => {
             <div className="login-form-container">
                 <div className="login-form-header">
                     <h3 className="form-title">Log in</h3>
-                    <RxCross2 className="cross-icon"/>
+                    <Link to={"/"}><RxCross2 className="cross-icon"/></Link>
+                    
                 </div>
                 <div className="login-form-content">
                     <label className="form-item" htmlFor="username">Username</label>
