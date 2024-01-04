@@ -1,5 +1,5 @@
 
-.login{
+.register{
     height: 88vh;
     width: 100%;
     background-image: url("../../assets/images/background.jpg");
@@ -9,8 +9,8 @@
     padding-top: 100px;
 }
 
-.login-form-container{
-    /* height: 400px; */
+.register-form-container{
+    /* height: 470px; */
     width: 350px;
     margin: 0 auto;
     background-color: white;
@@ -18,46 +18,46 @@
     color: rgba(0,0,0,0.4);
 }
 
-.login-form-header{
+.register-form-header{
     padding: 15px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
-.login-form-header .cross-icon{
+.register-form-header .cross-icon{
     float: right;
     font-size: 1.4rem;
     cursor: pointer;
 }
 
-.login-form-header .cross-icon:hover{
+.register-form-header .cross-icon:hover{
     font-size: 1.5rem;
 }
 
-.login-form-header .form-title{
+.register-form-header .form-title{
     display: inline-block;
     font-size: 1.2rem;
 }
 
-.login-form-content{
+.register-form-content{
     padding: 15px;
     padding-bottom: 25px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-.login-form-content .form-item{
+.register-form-content .form-item{
     display: block;
     margin-bottom: 10px;
 }
 
-.login-form-content label{
+.register-form-content label{
     font-size: 1.1rem;
     font-weight: 600;
 }
 
-.login-form-content input{
+.register-form-content input{
     width: 100%;
     height: 30px;
     outline: none;
@@ -65,11 +65,11 @@
     border: 1px solid rgba(0,0,0,0.1);
 }
 
-.login-form-content input:hover{
+.register-form-content input:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.login-form-content .username-input{
+.register-form-content .username-input, .email-input{
     margin-bottom: 10px;
 }
 
@@ -78,7 +78,7 @@
     margin-bottom: 10px;
 }
 
-.login-form-content .form-login-btn {
+.register-form-content .form-register-btn {
     width: 100%;
     height: 35px;
     border-radius: 5px;
@@ -93,17 +93,17 @@
     cursor: pointer;
 }
 
-.login-form-content .form-login-btn:hover {
+.register-form-content .form-register-btn:hover {
     font-size: 1.2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.login-form-content .register-link {
+.register-form-content .register-link {
     margin-left: 5px;
     text-decoration: none;
 }
 
-.login-form-content .register-link:hover, .login-form-content .register-link:active {
+.register-form-content .register-link:hover, .register-form-content .register-link:active {
     font-weight: 600;
     text-decoration: underline;
     color: royalblue;
