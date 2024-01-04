@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Card from "../../Components/Card";
 import "./style.css";
 import { INote } from "../../models/note";
+import * as NoteApi  from "../../network/noteApis";
 
 const NotesPage = () => {
     const [notes, setNotes] = useState<INote[]>([]);
@@ -9,11 +10,8 @@ const NotesPage = () => {
     useEffect( () => {
         const getNotes = async () => {
             try{ 
-                const response = await fetch(`/api/notes`, {
-                    method : "GET"
-                })
-                const notesData : INote[] = await response.json();
-                setNotes(notesData);
+                const response : INote[] = await NoteApi.getNotes();
+                setNotes(response);
             }catch(error){
                 console.log("Oops... Could not fetch notes!", error)
             }
