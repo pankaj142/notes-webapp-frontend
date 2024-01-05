@@ -2,6 +2,7 @@ import { RxCross2 } from "react-icons/rx";
 import {Link, useNavigate} from "react-router-dom";
 import "./style.css";
 import { useEffect, useState } from "react";
+import { login } from "../../network/userApis";
 
 const Login = () => {
     const navigate = useNavigate();
@@ -21,10 +22,19 @@ const Login = () => {
     const [isFormValid, setIsFormValid] = useState<boolean>(false);
 
     useEffect(() =>{
+            async function loginApiCall (){
+                try{
+                    const res = await login(formValues);
+                    console.log("login res", res)
+                    navigate("/");
+                }catch(error){
+                    console.log("Oops... Could not login !", error)
+                    alert("Login failed")
+                }
+            }
         if(isFormValid){
-            // 1. call the loin api
-            // 2. redirect to notes page
-            navigate("/");
+            console.log("login", formValues);
+            loginApiCall();
         }else{
             console.log("form is invalid")
         }
